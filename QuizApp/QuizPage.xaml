@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.QuizPage"
+             Title="QuizPage"
+             BackgroundColor="#414141">
+    <VerticalStackLayout>
+        <Label 
+            Text="Quiz APP" 
+            FontSize="50" 
+            HorizontalOptions="Center"
+            TextColor="White"/>
+        <Grid RowDefinitions="auto,auto,auto" ColumnDefinitions="*,*" Padding="20" BackgroundColor="#676565">
+            <Label Text="Player 1" TextColor="#00F6FF" Grid.Column="0" Grid.Row="0"/>
+            <Label Text="Player 2" TextColor="#FF0000" Grid.Column="1" Grid.Row="0" HorizontalOptions="End"/>
+            <HorizontalStackLayout Grid.Column="0" Grid.Row="1">
+                <Image Source="player_1_icon.png" WidthRequest="60" HeightRequest="60"/>
+                <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35"/>
+            </HorizontalStackLayout>
+            <Label Text="SCORE: 50" TextColor="#00F6FF" Grid.Column="0" Grid.Row="2"/>
+            <HorizontalStackLayout Grid.Column="1" Grid.Row="1">
+                <Image Source="player_2_icon.png" WidthRequest="60" HeightRequest="60"/>
+                <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35"/>
+            </HorizontalStackLayout>
+            <Label Text="SCORE: 50" TextColor="#FF0000" Grid.Column="1" Grid.Row="2"/>
+        </Grid>
+        <Grid RowDefinitions="*,*" BackgroundColor="#676565" Padding="20" Margin="0,20,0,0">
+            <Label Text="QUESTION 1/10" TextColor="White" FontSize="20" Grid.Row="0"/>
+            <Label Text="Which answer will you choose?" FontSize="18" TextColor="White" Grid.Row="1"/>
+        </Grid>
+        <Button Text="A. Answer A" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565"/>
+        <Button Text="B. Answer B" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565"/>
+        <Button Text="C. Answer C" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565"/>
+        <Button Text="D. Answer D" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565"/>
+    </VerticalStackLayout>
+</ContentPage>
