@@ -19,17 +19,26 @@ namespace QuizApp
             string FirstPlayer = FirstPlayerLabel.Text;
             string SecondPlayer = SecondPlayerLabel.Text;
             int QuestionsNumber;
+            //int Time;
             if (int.TryParse(QuestionsNumberLabel.Text, out QuestionsNumber))
             {
                 if(QuestionsNumber >=10 && QuestionsNumber <= 15)
                 {
                     if (FirstPlayer != null && SecondPlayer != null && !(FirstPlayer == SecondPlayer))
                     {
+                        //if(int.TryParse(TimeLabel.Text, out Time) && Time>=10)
+                        //{
+                            player1.name = FirstPlayer;
+                            player2.name = SecondPlayer;
 
-                        player1.name = FirstPlayer;
-                        player2.name = SecondPlayer;
-
-                        await Navigation.PushAsync(new QuizPage(player1,player2, QuestionsNumber));
+                            await Navigation.PushAsync(new QuizPage(player1, player2, QuestionsNumber//, Time
+                                ));
+                        //}
+                        //else
+                        //{
+                        //    await DisplayAlert("Podaj poprawną długość rundy", "Spróbuj ponownie", "Ok");
+                        //}    
+                        
                     }
                     else
                     {

@@ -6,51 +6,62 @@
              BackgroundColor="#333232">
     <VerticalStackLayout>
         <Label 
-            Text="Quiz APP" 
+            Text="QUIZ APP" 
             FontSize="50" 
             HorizontalOptions="Center"
             TextColor="White"/>
-        <Grid RowDefinitions="auto" ColumnDefinitions="auto,*,auto" Padding="20" BackgroundColor="#676565">
-            <VerticalStackLayout HorizontalOptions="Center" Grid.Row="0" Grid.Column="0">
-                <Label Text="Player 1" TextColor="#00F6FF" HorizontalOptions="Center" FontSize="18" x:Name="labelPlayer1"/>
-                <HorizontalStackLayout>
-                    <Image Source="player_1_icon.png" WidthRequest="60" HeightRequest="60"/>
-                    <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p1Heart1"/>
-                    <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p1Heart2"/>
-                    <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p1Heart3"/>
-                </HorizontalStackLayout>
-                <Label Text="SCORE: 0" TextColor="#00F6FF" Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" FontSize="18" x:Name="scorePlayer1"/>
-            </VerticalStackLayout>
-            <VerticalStackLayout HorizontalOptions="Center" Grid.Row="0" Grid.Column="2">
-                <Label Text="Player 2" TextColor="#FF0000" HorizontalOptions="Center" FontSize="18" x:Name="labelPlayer2"/>
-                <HorizontalStackLayout>
-                    <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p2Heart1"/>
-                    <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p2Heart2"/>
-                    <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p2Heart3"/>
-                    <Image Source="player_2_icon.png" WidthRequest="60" HeightRequest="60"/>
-                </HorizontalStackLayout>
-                <Label Text="SCORE: 0" TextColor="#FF0000" HorizontalOptions="Center" FontSize="18" x:Name="scorePlayer2"/>
-            </VerticalStackLayout>
-
-        </Grid>
+        <Border StrokeShape="RoundRectangle 10,10,10,10">
+            <Grid RowDefinitions="auto" ColumnDefinitions="auto,*,auto" Padding="20" BackgroundColor="#676565">
+                <VerticalStackLayout HorizontalOptions="Center" Grid.Row="0" Grid.Column="0">
+                    <Label Text="Player 1" TextColor="#00F6FF" HorizontalOptions="Center" FontSize="20" x:Name="labelPlayer1"/>
+                    <HorizontalStackLayout>
+                        <Image Source="player_1_icon.png" WidthRequest="60" HeightRequest="60"/>
+                        <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p1Heart1"/>
+                        <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p1Heart2"/>
+                        <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p1Heart3"/>
+                    </HorizontalStackLayout>
+                    <Label Text="SCORE: 0" TextColor="#00F6FF" Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" FontSize="20" x:Name="scorePlayer1"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout HorizontalOptions="Center" Grid.Row="0" Grid.Column="2">
+                    <Label Text="Player 2" TextColor="#FF0000" HorizontalOptions="Center" FontSize="20" x:Name="labelPlayer2"/>
+                    <HorizontalStackLayout>
+                        <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p2Heart1"/>
+                        <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p2Heart2"/>
+                        <Image Source="heart_icon.png" WidthRequest="35" HeightRequest="35" x:Name="p2Heart3"/>
+                        <Image Source="player_2_icon.png" WidthRequest="60" HeightRequest="60"/>
+                    </HorizontalStackLayout>
+                    <Label Text="SCORE: 0" TextColor="#FF0000" HorizontalOptions="Center" FontSize="20" x:Name="scorePlayer2"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+        
         <Border Margin="0,20,0,0" StrokeShape="RoundRectangle 10,10,10,10" HeightRequest="65">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#00F6FF" Offset="0.6" x:Name="playerGradientLeft"/>
+                    <GradientStop Color="#00F6FF" Offset="0.4" x:Name="playerGradientLeft"/>
                     <GradientStop Color="#414141" Offset="1" x:Name="playerGradientRight"/>
                 </LinearGradientBrush>
             </Border.Background>
             <Label Text="Player 1 is answering" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" x:Name="labelWhichPlayer"/>
         </Border>
-        <Grid RowDefinitions="auto,auto" BackgroundColor="#676565" Padding="20" Margin="0,20,0,0">
-            <Label Text="QUESTION 1/10" TextColor="White" FontSize="20" Grid.Row="0" x:Name="questionCounterLabel"/>
-            <Label Text="Which answer will you choose?" FontSize="18" TextColor="White" Grid.Row="1" x:Name="questionLabel"/>
-        </Grid>
-        <Button x:Name="btnA" Text="A. Answer A" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked"/>
-        <Button x:Name="btnB" Text="B. Answer B" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked"/>
-        <Button x:Name="btnC" Text="C. Answer C" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked"/>
-        <Button x:Name="btnD" Text="D. Answer D" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked"/>
+        <Border StrokeShape="RoundRectangle 10,10,10,10" Margin="0,20,0,0">
+            <Grid RowDefinitions="auto,auto" BackgroundColor="#676565" Padding="20" >
+                <Label Text="QUESTION 1/10" TextColor="White" FontSize="18" Grid.Row="0" x:Name="questionCounterLabel" HorizontalOptions="Center"/>
+                <Label Text="Which answer will you choose?" FontSize="22" TextColor="White" Grid.Row="1" x:Name="questionLabel" HorizontalOptions="Center" FontAttributes="Bold"/>
+            </Grid>
+        </Border>
+        
+        <Button x:Name="btnA" Text="A. Answer A" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked" FontSize="20"/>
+        <Button x:Name="btnB" Text="B. Answer B" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked" FontSize="20"/>
+        <Button x:Name="btnC" Text="C. Answer C" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked" FontSize="20"/>
+        <Button x:Name="btnD" Text="D. Answer D" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked" FontSize="20"/>
 
+
+        <Border Margin="0,20,0,0" StrokeShape="RoundRectangle 10,10,10,10" HeightRequest="20">
+            <Grid BackgroundColor="#444">
+                <BoxView x:Name="timerBar" BackgroundColor="#00C853" HorizontalOptions="Start" WidthRequest="100"/>
+            </Grid>
+        </Border>
     </VerticalStackLayout>
 
 </ContentPage>
