@@ -29,7 +29,7 @@
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="10,10,10,10" />
                                 </Border.StrokeShape>
-                                <Entry x:Name="FirstPlayer" Placeholder="Nazwa" BackgroundColor="White"/>
+                                <Entry x:Name="FirstPlayerLabel" Placeholder="Nazwa" BackgroundColor="White"/>
                             </Border>
                             <Label Text="Nazwa drugiego gracza" TextColor="White" />
                             <Border  Stroke="White"
@@ -37,7 +37,7 @@
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="10,10,10,10" />
                                 </Border.StrokeShape>
-                                <Entry x:Name="SecondPlayer" Placeholder="Nazwa" BackgroundColor="White"/>
+                                <Entry x:Name="SecondPlayerLabel" Placeholder="Nazwa" BackgroundColor="White"/>
                             </Border>
                             <Label Text="Ilość pytań" TextColor="White" />
                             <Border  Stroke="White"
@@ -45,9 +45,9 @@
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="10,10,10,10" />
                                 </Border.StrokeShape>
-                                <Entry x:Name="QuestionsNumber" Placeholder="Wpisz ilość pytań (10-15)" BackgroundColor="White"/>
+                                <Entry x:Name="QuestionsNumberLabel" Placeholder="Wpisz ilość pytań (10-15)" BackgroundColor="White"/>
                             </Border>
-                            <Button x:Name="StartGame" Text="Start" BackgroundColor="Black" TextColor="White" />
+                            <Button x:Name="StartGame" Text="Start" BackgroundColor="Black" TextColor="White" Clicked="StartGame_Clicked" />
                         </StackLayout>
                     </StackLayout>
                 </Border>
