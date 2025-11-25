@@ -1,5 +1,7 @@
 ﻿
 
+using QuizApp.Services;
+
 namespace QuizApp
 {
     public partial class MainPage : ContentPage

@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:QuizApp"
     Title="QuizApp"
-     FlyoutBehavior="Disabled"
+    FlyoutBehavior="Disabled"
     Shell.NavBarIsVisible="False">
 
     
@@ -17,5 +17,9 @@
     Title="Quiz"
     ContentTemplate="{DataTemplate local:QuizPage}"
     Route="QuizPage"/>
+    <ShellContent
+Title="Summary"
+ContentTemplate="{DataTemplate local:SummaryPage}"
+Route="Summary"/>
 
 </Shell>

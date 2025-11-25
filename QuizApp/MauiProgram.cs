@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Sharpnado.MaterialFrame;
 
 namespace QuizApp
 {
@@ -8,6 +9,7 @@ namespace QuizApp
         {
             var builder = MauiApp.CreateBuilder();
             builder
+                .UseSharpnadoMaterialFrame(loggerEnable: false)
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.SummaryPage"
+             BackgroundColor="#333232"
+             Title="Podsumowanie">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="Podsumowanie gry" FontSize="28" HorizontalOptions="Center" TextColor="White"/>
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*" BackgroundColor="#676565" Padding="20">
+            <Label Text="Gracz" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="Wynik" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="1"/>
+
+            <Label x:Name="lblPlayer1Name" Text="Player 1" TextColor="#00F6FF" Grid.Row="1" Grid.Column="0"/>
+            <Label x:Name="lblPlayer1Score" Text="0" TextColor="#00F6FF" Grid.Row="1" Grid.Column="1"/>
+
+            <Label x:Name="lblPlayer2Name" Text="Player 2" TextColor="#FF0000" Grid.Row="2" Grid.Column="0"/>
+            <Label x:Name="lblPlayer2Score" Text="0" TextColor="#FF0000" Grid.Row="2" Grid.Column="1"/>
+        </Grid>
+
+        <Label x:Name="lblSummary" TextColor="White" />
+
+        <Button Text="Powrot do ekranu glownego" Clicked="OnBackToMainClicked" BackgroundColor="#676565" TextColor="White"/>
+    </VerticalStackLayout>
+</ContentPage>

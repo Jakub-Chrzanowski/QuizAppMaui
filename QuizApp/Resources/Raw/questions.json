@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Jakie jest największe zwierzę lądowe?",
+    "answers": [ "Słoń afrykański", "Nosorożec", "Żyrafa", "Hipopotam" ],
+    "correct": "Słoń afrykański"
+  },
+  {
+    "question": "Który gaz jest niezbędny do oddychania przez ludzi?",
+    "answers": [ "Azot", "Tlen", "Wodór", "Dwutlenek węgla" ],
+    "correct": "Tlen"
+  },
+  {
+    "question": "Ile kontynentów mamy na Ziemi?",
+    "answers": [ "4", "5", "6", "7" ],
+    "correct": "7"
+  },
+  {
+    "question": "Który z tych języków programowania jest statycznie typowany?",
+    "answers": [ "Python", "Java", "JavaScript", "Ruby" ],
+    "correct": "Java"
+  },
+  {
+    "question": "Jaki jest symbol chemiczny wody?",
+    "answers": [ "O2", "CO2", "H2O", "NaCl" ],
+    "correct": "H2O"
+  },
+  {
+    "question": "Który organ odpowiada za pompowanie krwi?",
+    "answers": [ "Płuco", "Wątroba", "Żołądek", "Serce" ],
+    "correct": "Serce"
+  },
+  {
+    "question": "Jaka planeta jest najbliżej Słońca?",
+    "answers": [ "Wenus", "Merkury", "Ziemia", "Mars" ],
+    "correct": "Merkury"
+  },
+  {
+    "question": "Który rok był rokiem lądowania człowieka na Księżycu?",
+    "answers": [ "1965", "1969", "1972", "1980" ],
+    "correct": "1969"
+  },
+  {
+    "question": "Ile minut jest w godzinie?",
+    "answers": [ "30", "45", "60", "90" ],
+    "correct": "60"
+  },
+  {
+    "question": "Jak nazywa się stolica Polski?",
+    "answers": [ "Kraków", "Wrocław", "Gdańsk", "Warszawa" ],
+    "correct": "Warszawa"
+  },
+  {
+    "question": "Co mierzy skala Richtera?",
+    "answers": [ "Temperaturę", "Prędkość wiatru", "Siłę trzęsienia ziemi", "Ciśnienie atmosferyczne" ],
+    "correct": "Siłę trzęsienia ziemi"
+  },
+  {
+    "question": "Który element jest gazem szlachetnym?",
+    "answers": [ "Tlen", "Hel", "Węgiel", "Azot" ],
+    "correct": "Hel"
+  },
+  {
+    "question": "W jakiej jednostce mierzy się natężenie prądu?",
+    "answers": [ "Wolty", "Ampery", "Waty", "Om" ],
+    "correct": "Ampery"
+  },
+  {
+    "question": "Jaki program służy do kontroli wersji git?",
+    "answers": [ "Docker", "Git", "Maven", "NuGet" ],
+    "correct": "Git"
+  },
+  {
+    "question": "Który człon rodziny ma zwykle najmłodsze dziecko?",
+    "answers": [ "Ojciec", "Wnuk", "Dziadek", "Matka" ],
+    "correct": "Wnuk"
+  }
+]
