@@ -8,8 +8,8 @@ namespace QuizApp
 {
     public class Player
     {
-        string name { get; set; }
-        int hp { get; set; }
-        int score { get; set; }
+        public string name { get; set; }
+        public int hp { get; set; }
+        public int score { get; set; }
     }
 }
