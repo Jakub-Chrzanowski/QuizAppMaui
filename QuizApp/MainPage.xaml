@@ -24,30 +24,30 @@
                     <StackLayout Margin="0,10">
                         <StackLayout Padding="10">
                             <Label Text="Nazwa pierwszego gracza" TextColor="White" />
-                            <Border  Stroke="White"
+                            <Border  Stroke="#414141"
          StrokeThickness="2">
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="10,10,10,10" />
                                 </Border.StrokeShape>
-                                <Entry x:Name="FirstPlayerLabel" Placeholder="Nazwa" BackgroundColor="White"/>
+                                <Entry x:Name="FirstPlayerLabel" Placeholder="Nazwa" BackgroundColor="#414141" TextColor="White"/>
                             </Border>
                             <Label Text="Nazwa drugiego gracza" TextColor="White" />
-                            <Border  Stroke="White"
+                            <Border  Stroke="#414141"
                                      StrokeThickness="2">
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="10,10,10,10" />
                                 </Border.StrokeShape>
-                                <Entry x:Name="SecondPlayerLabel" Placeholder="Nazwa" BackgroundColor="White"/>
+                                <Entry x:Name="SecondPlayerLabel" Placeholder="Nazwa" BackgroundColor="#414141" TextColor="White"/>
                             </Border>
                             <Label Text="Ilość pytań" TextColor="White" />
-                            <Border  Stroke="White"
+                            <Border  Stroke="#414141"
          StrokeThickness="2">
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="10,10,10,10" />
                                 </Border.StrokeShape>
-                                <Entry x:Name="QuestionsNumberLabel" Placeholder="Wpisz ilość pytań (10-15)" BackgroundColor="White"/>
+                                <Entry x:Name="QuestionsNumberLabel" Placeholder="Wpisz ilość pytań (10-15)" BackgroundColor="#414141" TextColor="White"/>
                             </Border>
-                            <Button x:Name="StartGame" Text="Start" BackgroundColor="Black" TextColor="White" Clicked="StartGame_Clicked" />
+                            <Button Margin="0,20,0,0" x:Name="StartGame" Text="Start" BackgroundColor="#414141" TextColor="White" Clicked="StartGame_Clicked" CornerRadius="10"/>
                         </StackLayout>
                     </StackLayout>
                 </Border>
