@@ -36,8 +36,8 @@
         <Border Margin="0,20,0,0" StrokeShape="RoundRectangle 10,10,10,10" HeightRequest="65">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#414141" Offset="0.4"/>
-                    <GradientStop Color="#00F6FF" Offset="1" x:Name="playerGradient"/>
+                    <GradientStop Color="#00F6FF" Offset="0" x:Name="playerGradientLeft"/> 
+                    <GradientStop Color="#414141" Offset="0.6" x:Name="playerGradientRight"/>
                 </LinearGradientBrush>
             </Border.Background>
             <Label Text="Player 1 is answering" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" x:Name="labelWhichPlayer"/>

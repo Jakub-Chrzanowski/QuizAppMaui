@@ -21,13 +21,21 @@ public partial class QuizPage : ContentPage
         if(!which)
         {
             labelWhichPlayer.Text = "Player 2 is answering";
-            playerGradient.Color = Color.FromArgb("#FF0000");
+            playerGradientRight.Color = Color.FromArgb("#414141");
+            playerGradientRight.Offset = 1;
+            playerGradientLeft.Color = Color.FromArgb("#FF0000");
+            float v = 0.4;
+            playerGradientLeft.Offset = v;
             which = true;
         }
         else
         {
             labelWhichPlayer.Text = "Player 1 is answering";
-            playerGradient.Color = Color.FromArgb("#00F6FF");
+            playerGradientRight.Color = Color.FromArgb("#00F6FF");
+            playerGradientRight.Offset = 0;
+            playerGradientLeft.Color = Color.FromArgb("#414141");
+            float v = 0.6;
+            playerGradientLeft.Offset = v;
             which = false;
         }
     }
