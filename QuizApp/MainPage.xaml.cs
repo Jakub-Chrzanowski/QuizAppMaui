@@ -9,6 +9,8 @@ namespace QuizApp
         {
             InitializeComponent();
         }
+        Player player1 = new Player();
+        Player player2 = new Player();
 
         private async void StartGame_Clicked(object sender, EventArgs e)
         {
@@ -21,12 +23,11 @@ namespace QuizApp
                 {
                     if (FirstPlayer != null && SecondPlayer != null && !(FirstPlayer == SecondPlayer))
                     {
-                        Player player1 = new Player();
-                        Player player2 = new Player();
+
                         player1.name = FirstPlayer;
                         player2.name = SecondPlayer;
 
-                        await Navigation.PushAsync(new QuizPage());
+                        await Navigation.PushAsync(new QuizPage(player1,player2, QuestionsNumber));
                     }
                     else
                     {
