@@ -1,4 +1,5 @@
 ﻿
+
 namespace QuizApp
 {
     public partial class MainPage : ContentPage
@@ -20,6 +21,11 @@ namespace QuizApp
                 {
                     if (FirstPlayer != null && SecondPlayer != null && !(FirstPlayer == SecondPlayer))
                     {
+                        Player player1 = new Player();
+                        Player player2 = new Player();
+                        player1.name = FirstPlayer;
+                        player2.name = SecondPlayer;
+
                         await Navigation.PushAsync(new QuizPage());
                     }
                     else
