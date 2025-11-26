@@ -57,11 +57,11 @@
         <Button x:Name="btnD" Text="D. Answer D" Margin="0,20,0,0" HeightRequest="50" BackgroundColor="#676565" TextColor="White" Clicked="AnswerClicked" FontSize="20"/>
 
 
-        <Border Margin="0,20,0,0" StrokeShape="RoundRectangle 10,10,10,10" HeightRequest="20">
+        <!--<Border Margin="0,20,0,0" StrokeShape="RoundRectangle 10,10,10,10" HeightRequest="20">
             <Grid BackgroundColor="#444">
                 <BoxView x:Name="timerBar" BackgroundColor="#00C853" HorizontalOptions="Start" WidthRequest="100"/>
             </Grid>
-        </Border>
+        </Border>-->
     </VerticalStackLayout>
 
 </ContentPage>
