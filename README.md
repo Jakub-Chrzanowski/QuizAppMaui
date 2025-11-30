@@ -13,7 +13,6 @@ Testuj wiedzę, odpowiadaj na pytania i sprawdzaj swoje wyniki!
 -   [🛠 Technologie](#-technologie)
 -   [🚀 Instalacja i uruchomienie](#-instalacja-i-uruchomienie)
 -   [📂 Struktura katalogów](#-struktura-katalogów)
--   [🖼 Zrzuty ekranu](#-zrzuty-ekranu)
 -   [📘 Jak używać aplikacji](#-jak-używać-aplikacji)
 -   [🗺 Plany / Roadmap](#-plany--roadmap)
 -   [🤝 Wkład / Contributing](#-wkład--contributing)
