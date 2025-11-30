@@ -45,7 +45,7 @@ do stworzenia większego systemu quizowego.
 -   .NET MAUI\
 -   C#\
 -   XAML\
--   MVVM (jeśli używasz)
+-   MVVM 
 
 ------------------------------------------------------------------------
 
@@ -85,14 +85,6 @@ do stworzenia większego systemu quizowego.
     │   └── Resources/           
     ├── QuizApp.sln              
     └── README.md                
-
-------------------------------------------------------------------------
-
-## 🖼 Zrzuty ekranu
-
-Dodaj tu swoje zrzuty, np.:
-
-    ![Ekran startowy](screenshots/start.png)
 
 ------------------------------------------------------------------------
 
